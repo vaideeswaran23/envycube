@@ -25,12 +25,9 @@ const AppMenu = ({ open, onClickLink }) => {
           {MenuItems.map((menu) => (
             <div key={menu}>
               <NavLink
-                className={(doops) => {
-                  console.log(menu, doops);
-                  return `${styles.link} ${
-                    doops.isActive ? styles.active : ""
-                  }`;
-                }}
+                className={({ isActive }) =>
+                  `${styles.link} ${isActive ? styles.active : ""}`
+                }
                 onClick={onClickLink}
                 to={`/${menu}`}
               >
