@@ -1,14 +1,17 @@
 .headerContainer {
+  font-size: 1.5rem;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 1001;
   width: 100%;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  color: #fff;
+  &.showMenu {
+    color: unset;
+  }
   h3 {
     margin: 0;
   }
@@ -19,6 +22,46 @@
   }
 }
 
-.link {
-  text-transform: capitalize;
+.drawerContainer {
+  height: 100%;
+  :global(.ant-drawer-content-wrapper) {
+    height: 100% !important;
+  }
+
+  .appMenuContent {
+    height: 100%;
+    position: relative;
+    nav {
+      font-size: 1.5rem;
+      font-weight: 400;
+      height: calc(100% - 2rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 0.5rem;
+      .link {
+        color: #888888;
+        &.active {
+          color: #a0943f;
+        }
+      }
+    }
+    .rightText {
+      position: absolute;
+      top: 45%;
+      right: -10rem;
+      transform: rotate(90deg);
+    }
+    footer {
+      font-size: 2rem;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      > span {
+        cursor: pointer;
+      }
+    }
+  }
 }

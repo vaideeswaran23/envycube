@@ -1,9 +1,19 @@
 .homeContainer {
   height: 100%;
-  .carousel {
+  .carouselContainer {
     height: 100%;
+    .carouselSlickList {
+      height: 100%;
+      :global(.slick-list),
+      :global(.slick-track),
+      :global(.slick-slide),
+      :global(.slick-slide) > div {
+        height: 100%;
+      }
+    }
   }
   img {
     height: 100%;
+    object-fit: cover;
   }
 }
