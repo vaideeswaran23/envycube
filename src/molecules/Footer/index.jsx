@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Footer.module.scss";
 
-const Footer = () => (
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  return (
   <footer className={styles.footerContainer}>
-    <center>© Copyright 2020 Formspace Architects. All rights reserved</center>
+    <center>&copy; {currentYear} Envycube Architects. All rights reserved.</center>
   </footer>
-);
+)};
 
 export default Footer;
