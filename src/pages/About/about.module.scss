@@ -1,0 +1,52 @@
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding-top: 5rem;
+}
+
+.envyContainer {
+  max-width: 90vw;
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  .content, .image {
+    width: 48%;
+    height: 100%;
+  }
+  .imgStyle {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content {
+
+  h2 {
+    font-size: 42px;
+  }
+
+}
+
+.one {
+  font-size: 24px
+}
+
+.two {
+  font-size: 20px
+}
+
+.three {
+  font-size: 20px
+}
+
+.image{
+    
+}
