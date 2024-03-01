@@ -1,5 +1,4 @@
 .headerContainer {
-  font-size: 1.5rem;
   position: fixed;
   top: 0;
   z-index: 1001;
@@ -8,14 +7,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  &.showMenu {
+  padding: 1rem 2.5rem;
+  color: #fff;
+  &:not(.homePageHeader) {
     color: unset;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
   }
-  h3 {
-    margin: 0;
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    img {
+      width: 4rem;
+    }
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      margin: 0;
+    }
+    span {
+      letter-spacing: 0.65rem;
+    }
   }
   .rightContainer {
+    font-size: 3rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -32,9 +48,9 @@
     height: 100%;
     position: relative;
     nav {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 400;
-      height: calc(100% - 2rem);
+      height: calc(100% - 2.4rem);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -49,12 +65,13 @@
     }
     .rightText {
       position: absolute;
-      top: 45%;
-      right: -10rem;
+      top: 50%;
+      right: -16.5rem;
       transform: rotate(90deg);
+      margin: 0;
     }
     footer {
-      font-size: 2rem;
+      font-size: 2.4rem;
       flex-shrink: 0;
       display: flex;
       justify-content: flex-end;

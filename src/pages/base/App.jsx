@@ -11,13 +11,11 @@ function App() {
     <BrowserRouter>
       <div className={styles.App}>
         <Header />
-        <main>
-          <Routes>
-            <Route exact path="/home" Component={Home} />
-            <Route exact path="/about" Component={About} />
-            <Route path="/" element={<Navigate to="/home" replace={true} />} />
-          </Routes>
-        </main>
+        <Routes>
+          <Route exact path="/home" Component={Home} />
+          <Route exact path="/about" Component={About} />
+          <Route path="/" element={<Navigate to="/home" replace={true} />} />
+        </Routes>
         <Footer />
       </div>
     </BrowserRouter>
