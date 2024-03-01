@@ -4,7 +4,7 @@ function App() {
   return (
     <div className={styles.App}>
       {/* Router logic to be added */}
-      Envy Cube
+      Envy Cub
     </div>
   );
 }
