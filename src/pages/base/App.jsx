@@ -6,6 +6,10 @@ import Home from "../Home";
 import About from "../About";
 import styles from "./App.module.scss";
 
+const Services = () => <center>Services</center>;
+const Works = () => <center>Works</center>;
+const Contact = () => <center>Services</center>;
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +18,9 @@ function App() {
         <Routes>
           <Route exact path="/home" Component={Home} />
           <Route exact path="/about" Component={About} />
+          <Route exact path="/services" Component={Services} />
+          <Route exact path="/works" Component={Works} />
+          <Route exact path="/contact" Component={Contact} />
           <Route path="/" element={<Navigate to="/home" replace={true} />} />
         </Routes>
         <Footer />
