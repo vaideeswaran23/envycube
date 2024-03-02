@@ -7,7 +7,22 @@ const About = () => {
   return (
     <div className={styles.aboutContainer}>
       <h1 className={styles.heading1}>About Us</h1>
-      <div className={styles.content}>
+      <div className={styles.contentContainer}>
+        <section className={styles.leftSection}>ECA</section>
+        <section className={styles.rightSection}>
+          <h2>We Envycube architects</h2>
+          <p>
+            With more than 7 years of experience. At Envy Cube, we believe in
+            the transformative power of architecture to enrich lives and shape
+            communities.
+          </p>
+          <p>
+            With a commitment to innovation, sustainability, and excellence in
+            design, we strive to create spaces that inspire, engage, and endure
+          </p>
+        </section>
+      </div>
+      {/* <div className={styles.content}>
         <h2 className={styles.heading2}>
           Envycube Architects <br></br> Overview
         </h2>
@@ -30,8 +45,32 @@ const About = () => {
           seamless blend of artistry and functionality. Your architectural
           aspirations find a perfect home with Envycube Architects.
         </p>
+      </div> */}
+      <div className={styles.teamSection}>
+        <h3>SCROLL TO MEET OUR TEAM</h3>
+        <section className={styles.imagesList}>
+          <div className={styles.imageContainer}>
+            <div
+              className={styles.image}
+              style={{ backgroundImage: `url(${aboutImage})` }}
+            >
+              <div className={styles.name}>Name 1</div>
+            </div>
+            <div className={styles.position}>CEO & FOUNDER</div>
+          </div>
+          <div className={styles.imageContainer}>
+            <div
+              className={styles.image}
+              style={{ backgroundImage: `url(${aboutImage})` }}
+            >
+              <div className={styles.name}>Name 2</div>
+            </div>
+            <div className={styles.position}>CO-FOUNDER</div>
+          </div>
+          {/* <img className={styles.image} src={aboutImage} alt="about" />
+          <img className={styles.image} src={aboutImage} alt="about" /> */}
+        </section>
       </div>
-      <img className={styles.image} src={aboutImage} alt="about" />
     </div>
   );
 };
