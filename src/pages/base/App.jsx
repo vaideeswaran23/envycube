@@ -8,8 +8,7 @@ import Services from "../Services";
 import styles from "./App.module.scss";
 import Works from "../Works";
 import WorksDetail from "../WorksDetail";
-
-const Contact = () => <center>Services</center>;
+import Contact from "../Contact";
 
 function App() {
   // const onScroll = () => {
