@@ -6,8 +6,9 @@ import Home from "../Home";
 import About from "../About";
 import Services from "../Services";
 import styles from "./App.module.scss";
+import Works from "../Works";
+import WorksDetail from "../WorksDetail";
 
-const Works = () => <center>Works</center>;
 const Contact = () => <center>Services</center>;
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/about" Component={About} />
           <Route exact path="/services" Component={Services} />
           <Route exact path="/works" Component={Works} />
+          <Route exact path="/works/:id" Component={WorksDetail} />
           <Route exact path="/contact" Component={Contact} />
           <Route path="/" element={<Navigate to="/home" replace={true} />} />
         </Routes>

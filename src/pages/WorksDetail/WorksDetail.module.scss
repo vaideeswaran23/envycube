@@ -1,0 +1,65 @@
+// WorksDetail.module.scss
+
+.worksDetail {
+  padding: 20px; /* Add some padding */
+  padding-top: 9rem;
+}
+
+.mainTitle {
+  text-align: center;
+  font-size: 3rem; /* Adjust font size as needed */
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  margin: 0 auto; /* Remove margin for gap on all sides */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+/* Styles for the back button */
+.backButton {
+  position: fixed; /* Position the button fixed on the viewport */
+  bottom: 2rem; /* Adjust bottom spacing as needed */
+  right: 5rem; /* Adjust right spacing as needed */
+  z-index: 999; /* Ensure it appears above other content */
+  font-size: 2rem; /* Adjust font size to make it bigger */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Set width of the button */
+  height: 60px; /* Set height of the button */
+  border-radius: 50%; /* Make the button circular */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Add background color with opacity */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.backButton:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Change background color on hover */
+}
+
+@media (max-width: 768px) {
+  .backButton {
+    bottom: 2rem; /* Adjust bottom spacing as needed */
+    right: 2rem; /* Adjust right spacing as needed */
+  }
+}
