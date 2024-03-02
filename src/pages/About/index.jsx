@@ -54,18 +54,18 @@ const About = () => {
               className={styles.image}
               style={{ backgroundImage: `url(${aboutImage})` }}
             >
-              <div className={styles.name}>Name 1</div>
+              <div className={styles.name}>M.A. Mohamed Javed B.Arch</div>
             </div>
-            <div className={styles.position}>CEO & FOUNDER</div>
+            <div className={styles.position}>ARCHITECT</div>
           </div>
           <div className={styles.imageContainer}>
             <div
               className={styles.image}
               style={{ backgroundImage: `url(${aboutImage})` }}
             >
-              <div className={styles.name}>Name 2</div>
+              <div className={styles.name}>A.Faris Ahamed B.Arch</div>
             </div>
-            <div className={styles.position}>CO-FOUNDER</div>
+            <div className={styles.position}>ARCHITECT</div>
           </div>
           {/* <img className={styles.image} src={aboutImage} alt="about" />
           <img className={styles.image} src={aboutImage} alt="about" /> */}

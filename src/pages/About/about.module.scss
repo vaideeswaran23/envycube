@@ -55,6 +55,7 @@
     .imagesList {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       // .imageContainer {
 
       // }
@@ -69,6 +70,9 @@
           height: 80%;
           background-size: contain;
           background-repeat: no-repeat;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
         }
         .name {
           position: relative;
@@ -109,6 +113,19 @@
 }
 
 @media (max-width: 768px) {
+  .teamSection {
+    .imagesList {
+      justify-content: center !important;
+      .imageContainer {
+        width: 100% !important;
+        .image {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+  }
   .aboutContainer {
     .content,
     .image {
