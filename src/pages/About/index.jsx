@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import aboutImage from "../../assets/works/about/about.jpg";
-import withLoadGifScreen from "../../atoms/LoadGifScreen";
+import withLoadGifScreen from "../../hoc/withLoadGifScreen";
 import styles from "./about.module.scss";
 
 const About = () => {
   return (
     <div className={styles.aboutContainer}>
+      <h1 className={styles.heading1}>About Us</h1>
       <div className={styles.content}>
-        <h2>
+        <h2 className={styles.heading2}>
           Envycube Architects <br></br> Overview
         </h2>
         <p className={styles.one}>
@@ -18,8 +19,11 @@ const About = () => {
         </p>
         <p className={styles.two}>
           Our team's relentless pursuit of excellence has garnered us numerous
-          accolades and industry recognition. Here, creativity meets precision
-          to create architectural marvels that stand the test of time
+          accolades and industry recognition.{" "}
+          <span className={styles.highlight}>
+            Here, Creativity meets precision to create architectural marvels
+          </span>{" "}
+          that stand the test of time
         </p>
         <p className={styles.three}>
           Embark on a visual journey through our projects and witness the
