@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import aboutImage from "../../assets/works/about/about.jpg";
 import withLoadGifScreen from "../../hoc/withLoadGifScreen";
 import styles from "./about.module.scss";

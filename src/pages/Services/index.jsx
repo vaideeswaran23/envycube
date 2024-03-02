@@ -1,9 +1,10 @@
 import React from "react";
 import CardContainer from "./Cards";
-import styles from "./Services.module.scss";
 import ArchitectureDesign from "../../assets/works/services/architecturedesign.jpg";
 import Interiordesign from "../../assets/works/services/interiordesign.jpg";
 import LandscapeArchitecture from "../../assets/works/services/landscape architecture.jpg";
+import withLoadGifScreen from "../../hoc/withLoadGifScreen";
+import styles from "./Services.module.scss";
 
 const serviceCards = [
   {
@@ -52,4 +53,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default withLoadGifScreen(Services);
