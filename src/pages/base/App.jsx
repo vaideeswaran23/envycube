@@ -4,9 +4,9 @@ import Header from "../../molecules/Header";
 import Footer from "../../molecules/Footer";
 import Home from "../Home";
 import About from "../About";
+import Services from "../Services";
 import styles from "./App.module.scss";
 
-const Services = () => <center>Services</center>;
 const Works = () => <center>Works</center>;
 const Contact = () => <center>Services</center>;
 
