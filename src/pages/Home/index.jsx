@@ -14,7 +14,7 @@ const images = [
   {
     src: bedRoomImage1,
     alt: "bedRoomImage1",
-    to: "/1",
+    to: "/works/1",
   },
   {
     src: bedRoomImage2,
