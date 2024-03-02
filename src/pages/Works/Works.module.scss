@@ -6,15 +6,14 @@
 
 .title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 50px;
 }
 
 .workImage {
   position: relative;
   width: calc(100% - 40px); /* Adjust width to fit the margin */
-  margin-left: 20px; /* Add left margin */
-  margin-right: 20px; /* Add right margin */
+  margin: 5rem 20px;
 }
 
 .overlay {
@@ -30,6 +29,11 @@
 
 .workImage:hover .overlay {
   opacity: 1; /* Show overlay on hover */
+}
+
+.image {
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .workTitle {
