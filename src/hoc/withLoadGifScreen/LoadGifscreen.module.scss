@@ -1,0 +1,51 @@
+.wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1002;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  .gifContainer {
+    img {
+      width: 25rem;
+      object-fit: contain;
+    }
+    .title1,
+    .title2 {
+      margin: 0;
+      position: relative;
+      width: 100%;
+      text-align: center;
+    }
+    .title1 {
+      font-size: 3rem;
+      font-weight: 500;
+      animation: slideInLeft 1s ease-in-out;
+    }
+    .title2 {
+      font-size: 1.5rem;
+      letter-spacing: 0.8rem;
+      animation: slideInRight 1s ease-in-out;
+    }
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -6,6 +6,33 @@
   width: 90%;
   margin: auto;
   padding-top: 9rem;
+  letter-spacing: 0.05rem;
+  p {
+    color: #777;
+  }
+  .two,
+  .three {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Customize the box-shadow values */
+    transition: box-shadow 0.3s ease-in-out;
+    &:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Customize the box-shadow values for hover effect */
+    }
+  }
+  .heading1,
+  .heading2 {
+    font-weight: 500;
+  }
+  .heading1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0;
+  }
+  .heading2 {
+    font-size: 2.5rem;
+  }
   .content,
   .image {
     width: 48%;
@@ -15,25 +42,19 @@
     max-height: 100%;
     object-fit: cover;
   }
-}
-
-.content {
-  h2 {
-    font-size: 3rem;
-    margin: 0;
+  .one {
+    font-size: 1.8rem;
+    font-style: italic;
   }
-}
-
-.one {
-  font-size: 2.4rem;
-}
-
-.two {
-  font-size: 2rem;
-}
-
-.three {
-  font-size: 2rem;
+  .two {
+    font-size: 1.6rem;
+  }
+  .three {
+    font-size: 1.6rem;
+  }
+  .highlight {
+    color: rgb(227, 108, 9);
+  }
 }
 
 @media (max-width: 768px) {
@@ -44,6 +65,7 @@
     }
     .content {
       order: 1;
+      padding-bottom: 1rem;
     }
   }
 }

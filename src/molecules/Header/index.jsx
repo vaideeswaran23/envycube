@@ -30,7 +30,7 @@ const Header = () => {
             loading="lazy"
           />
           <div>
-            <h3>Envy Cube</h3>
+            <h3>ENVYCUBE</h3>
             <span>ARCHITECTS</span>
           </div>
         </div>
