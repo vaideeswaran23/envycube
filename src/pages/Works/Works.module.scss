@@ -1,0 +1,63 @@
+/* Works.module.scss */
+
+.works {
+  padding: 50px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.workImage {
+  position: relative;
+  width: calc(100% - 40px); /* Adjust width to fit the margin */
+  margin-left: 20px; /* Add left margin */
+  margin-right: 20px; /* Add right margin */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Add overlay with transparency */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.workImage:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.workTitle {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center both horizontally and vertically */
+  color: white;
+  font-size: 2rem; /* Increase font size */
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add transition effect */
+}
+
+.workImage:hover .workTitle {
+  opacity: 1; /* Show title on hover */
+}
+
+@media (max-width: 767px) {
+  .worksGrid {
+    justify-content: center; /* Center items on smaller screens */
+  }
+
+  .workImage {
+    width: calc(100% - 20px); /* Adjust width to take full width on mobile */
+  }
+}
