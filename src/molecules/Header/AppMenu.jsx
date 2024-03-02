@@ -17,8 +17,6 @@ const AppMenu = ({ open, onClickLink }) => {
       headerStyle={{ display: "none" }}
       open={open}
       placement="bottom"
-      title={null}
-      footer={null}
     >
       <div className={styles.appMenuContent}>
         <nav>

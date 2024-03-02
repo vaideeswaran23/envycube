@@ -11,6 +11,7 @@
     img {
       width: 25rem;
       object-fit: contain;
+      margin-bottom: -1.75rem;
     }
     .title1,
     .title2 {
@@ -21,12 +22,20 @@
     }
     .title1 {
       font-size: 3rem;
-      font-weight: 500;
+      font-weight: 600;
+      line-height: 1em;
+      text-align: center;
       animation: slideInLeft 1s ease-in-out;
     }
     .title2 {
+      display: inline-block;
       font-size: 1.5rem;
-      letter-spacing: 0.8rem;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1em;
+      width: 100%;
+      padding-left: 0.3rem;
+      letter-spacing: 0.5rem;
       animation: slideInRight 1s ease-in-out;
     }
   }
