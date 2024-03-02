@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router";
 import { CloseOutlined, MenuOutlined } from "@ant-design/icons";
 import AppMenu from "./AppMenu";
@@ -19,11 +20,12 @@ const Header = () => {
   return (
     <>
       <header
+        id="header"
         className={`${styles.headerContainer} ${
           isHomePage ? styles.homePageHeader : ""
         }`}
       >
-        <div className={styles.title}>
+        <NavLink className={styles.title} to="/home">
           <img
             src={isHomePage ? logoWhite : logoBlack}
             alt="logo"
@@ -33,7 +35,7 @@ const Header = () => {
             <h3>ENVYCUBE</h3>
             <span>ARCHITECTS</span>
           </div>
-        </div>
+        </NavLink>
         <div className={styles.rightContainer}>
           {showMenu ? (
             <CloseOutlined onClick={toggleShowMenu} />

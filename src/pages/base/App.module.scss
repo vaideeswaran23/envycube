@@ -1,8 +1,14 @@
 .App {
   height: 100%;
+  overflow: auto;
   > center {
     height: 100%;
     padding-top: 12rem;
     font-size: 3rem;
   }
+  // header {
+  //   &:global(.scrolled) {
+  //     border-bottom: 1px solid #e2e8f0;
+  //   }
+  // }
 }
