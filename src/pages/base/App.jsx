@@ -12,9 +12,26 @@ import WorksDetail from "../WorksDetail";
 const Contact = () => <center>Services</center>;
 
 function App() {
+  // const onScroll = () => {
+  //   const header = document.getElementById("header");
+  //   const aboutPage = document.getElementById("about");
+  //   if (aboutPage) {
+  //     const { top } = aboutPage.getBoundingClientRect();
+  //     if (top < -80) {
+  //       header.classList.add("scrolled");
+  //     } else {
+  //       header.classList.remove("scrolled");
+  //     }
+  //   } else {
+  //     header.classList.remove("scrolled");
+  //   }
+  // };
   return (
     <BrowserRouter>
-      <div className={styles.App}>
+      <div
+        className={styles.App}
+        // onScroll={onScroll}
+      >
         <Header />
         <Routes>
           <Route exact path="/home" Component={Home} />

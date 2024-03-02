@@ -35,7 +35,7 @@ import utility4 from "../../assets/works/utility areas/4.jpeg";
 import utility5 from "../../assets/works/utility areas/5.jpeg";
 import utility6 from "../../assets/works/utility areas/6.jpeg";
 import utility7 from "../../assets/works/utility areas/7.jpeg";
-import NotFound from "./NotFound"; // Import the NotFound component
+import NotFound from "../../molecules/NotFound";
 
 const idDesignMap = {
   1: {
@@ -108,7 +108,7 @@ const WorksDetail = () => {
             <div className={styles.imageContainer}>
               <img
                 src={image}
-                alt={`${work.title} Image ${index + 1}`}
+                alt={`${work.title}-${index + 1}`}
                 className={styles.image}
               />
             </div>

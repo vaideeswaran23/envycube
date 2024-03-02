@@ -9,6 +9,7 @@ import washroomImage from "../../assets/works/bathroom/1.jpeg";
 import kitchenImage from "../../assets/works/kitchen/1.jpeg";
 import diningroomImage from "../../assets/works/dining room/1.jpeg";
 import utilityImage from "../../assets/works/utility areas/1.jpeg";
+import withLoadGifScreen from "../../hoc/withLoadGifScreen";
 
 const worksData = [
   { id: 1, image: bedroomImage, title: "Bedroom Design" },
@@ -42,4 +43,4 @@ const Works = () => {
   );
 };
 
-export default Works;
+export default withLoadGifScreen(Works);
