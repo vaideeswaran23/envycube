@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 import { Drawer } from "antd";
 import styles from "./Header.module.scss";
 import {
-  FacebookOutlined,
+  // FacebookOutlined,
   InstagramOutlined,
-  YoutubeOutlined,
+  // YoutubeOutlined,
 } from "@ant-design/icons";
 
 const MenuItems = ["home", "about", "services", "works", "contact"];
@@ -38,9 +38,17 @@ const AppMenu = ({ open, onClickLink }) => {
           ARCHITECTURE | INTERIOR | PLANNING | CONSTRUCTION
         </p>
         <footer>
-          <FacebookOutlined />
-          <InstagramOutlined />
-          <YoutubeOutlined />
+          {/* <FacebookOutlined /> */}
+          <a
+            className={styles.socialLink}
+            href="https://www.instagram.com/envycube_architects"
+            target="_blank"
+            referrerPolicy="no-referrer"
+            rel="noreferrer"
+          >
+            <InstagramOutlined />
+          </a>
+          {/* <YoutubeOutlined /> */}
         </footer>
       </div>
     </Drawer>

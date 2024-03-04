@@ -91,3 +91,10 @@
     }
   }
 }
+
+.socialLink {
+  color: inherit;
+  &:hover {
+    color: #1677ff;
+  }
+}
