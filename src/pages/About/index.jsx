@@ -1,5 +1,6 @@
 import React from "react";
-import aboutImage from "../../assets/works/about/about.jpg";
+import member1Image from "../../assets/works/about/member1.jpg";
+import member2Image from "../../assets/works/about/member2.jpg";
 import withLoadGifScreen from "../../hoc/withLoadGifScreen";
 import styles from "./about.module.scss";
 
@@ -47,12 +48,12 @@ const About = () => {
         </p>
       </div> */}
       <div className={styles.teamSection}>
-        <h3>SCROLL TO MEET OUR TEAM</h3>
+        <h3>MEET OUR TEAM</h3>
         <section className={styles.imagesList}>
           <div className={styles.imageContainer}>
             <div
               className={styles.image}
-              style={{ backgroundImage: `url(${aboutImage})` }}
+              style={{ backgroundImage: `url(${member1Image})` }}
             >
               <div className={styles.name}>M.A. Mohamed Javed B.Arch</div>
             </div>
@@ -61,7 +62,7 @@ const About = () => {
           <div className={styles.imageContainer}>
             <div
               className={styles.image}
-              style={{ backgroundImage: `url(${aboutImage})` }}
+              style={{ backgroundImage: `url(${member2Image})` }}
             >
               <div className={styles.name}>A.Faris Ahamed B.Arch</div>
             </div>
