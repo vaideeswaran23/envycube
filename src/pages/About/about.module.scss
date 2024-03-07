@@ -56,47 +56,16 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      // .imageContainer {
-
-      // }
       .imageContainer {
-        position: relative;
         width: 40%;
         height: 50rem;
-        .image {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          // width: 40rem;
-          height: 80%;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center center;
-        }
-        .name {
+        img {
           width: 100%;
           height: 80%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          top: -3rem;
-          opacity: 0;
-          transition: all 0.3s;
-          z-index: 2;
+          object-fit: cover;
         }
-        .position {
+        > section {
           text-align: center;
-          opacity: 0;
-        }
-        &:hover {
-          .name,
-          .position {
-            top: 0;
-            background-color: rgba(255, 255, 255, 0.8);
-            color: #000;
-            opacity: 1;
-          }
         }
       }
     }

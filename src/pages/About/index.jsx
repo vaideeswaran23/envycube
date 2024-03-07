@@ -51,22 +51,18 @@ const About = () => {
         <h3>MEET OUR TEAM</h3>
         <section className={styles.imagesList}>
           <div className={styles.imageContainer}>
-            <div
-              className={styles.image}
-              style={{ backgroundImage: `url(${member1Image})` }}
-            >
+            <img src={member1Image} alt="M.A. Mohamed Javed B.Arch" />
+            <section>
               <div className={styles.name}>M.A. Mohamed Javed B.Arch</div>
-            </div>
-            <div className={styles.position}>ARCHITECT</div>
+              <div className={styles.position}>ARCHITECT</div>
+            </section>
           </div>
           <div className={styles.imageContainer}>
-            <div
-              className={styles.image}
-              style={{ backgroundImage: `url(${member2Image})` }}
-            >
+            <img src={member2Image} alt="A.Faris Ahamed B.Arch" />
+            <section>
               <div className={styles.name}>A.Faris Ahamed B.Arch</div>
-            </div>
-            <div className={styles.position}>ARCHITECT</div>
+              <div className={styles.position}>ARCHITECT</div>
+            </section>
           </div>
           {/* <img className={styles.image} src={aboutImage} alt="about" />
           <img className={styles.image} src={aboutImage} alt="about" /> */}
