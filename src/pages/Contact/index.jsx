@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  // EnvironmentOutlined,
+  EnvironmentOutlined,
   MailOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
@@ -33,33 +33,31 @@ const Contact = () => {
           <PhoneOutlined />
           <a href="tel:+919626830630">+91-9626830630</a>
         </div>
-        <p>
+        {/* <p>
           No.34/1, 1st Floor, Saffa Arcade, Othakadai, Cantonment, Trichy - 01
-        </p>
-        {/* <div style={{ margin: "1rem 0" }}>
+        </p> */}
+        <div style={{ margin: "1rem 0" }}>
           <EnvironmentOutlined />
           <a
-            href="https://maps.app.goo.gl/jSG4sukAW62vbXbPA"
+            href="https://www.google.com/maps/dir//10.8039722,78.68775/@10.8039722,78.68775,16z?entry=ttu"
             target="_blank"
             rel="noreferrer"
             style={{ marginLeft: "1rem", textDecoration: "none" }}
           >
             No.34/1, 1st Floor, Saffa Arcade, Othakadai, Cantonment, Trichy - 01
           </a>
-        </div> */}
+        </div>
       </div>
       <div className={styles.mapContainer}>
-        {/* Add Google Map component here */}
         <iframe
-          title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18642.66166843!2d78.68951710747129!3d10.800829715176153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1709395536036!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
+          title="Envy cube Map"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3919.095989275155!2d78.6851656750423!3d10.803959889346466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDQ4JzE0LjMiTiA3OMKwNDEnMTUuOSJF!5e0!3m2!1sen!2sin!4v1709904355031!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        />
       </div>
     </div>
   );
